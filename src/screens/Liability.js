@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
+import {TextInput} from 'react-native-gesture-handler';
 
 const Liability = () => {
   return (
@@ -10,18 +11,30 @@ const Liability = () => {
       <View style={Styles.container2}>
         <Text style={Styles.text2}> Name</Text>
 
-        <View style={Styles.textbox}>
-          <Text></Text>
-        </View>
+        <TextInput
+          style={{
+            width: 300,
+            height: 41,
+            backgroundColor: '#D9D9D9',
+            borderRadius: 10,
+          }}></TextInput>
 
         <Text style={Styles.text2}>Total Amount</Text>
-        <View style={Styles.textbox}>
-          <Text></Text>
-        </View>
+        <TextInput
+          style={{
+            width: 300,
+            height: 41,
+            backgroundColor: '#D9D9D9',
+            borderRadius: 10,
+          }}></TextInput>
         <Text style={Styles.text2}>Installment Amount</Text>
-        <View style={Styles.textbox}>
-          <Text></Text>
-        </View>
+        <TextInput
+          style={{
+            width: 300,
+            height: 41,
+            backgroundColor: '#D9D9D9',
+            borderRadius: 10,
+          }}></TextInput>
       </View>
     </View>
   );
@@ -43,7 +56,7 @@ Styles = StyleSheet.create({
   text1: {
     color: 'black',
     fontSize: 28,
-    fontWeight: '600',
+    fontWeight: '400',
     textAlign: 'center',
     marginTop: 30,
   },
