@@ -1,9 +1,10 @@
 import {View, Text} from 'react-native';
-import React from 'react';
+import React, {useContext} from 'react';
 import Button from '../components/Button';
 import {TextInput} from 'react-native-gesture-handler';
-
+import {AuthContext} from '../Context';
 const Start = () => {
+  const {signIn} = useContext(AuthContext);
   return (
     <View style={{flex: 1}}>
       <View
@@ -52,7 +53,7 @@ const Start = () => {
       </View>
 
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-        <Button onPress={() => example().then(_ => signIn())} title="Login" />
+        <Button onPress={() => signIn()} title="Login" />
       </View>
     </View>
   );
