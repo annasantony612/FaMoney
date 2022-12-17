@@ -11,7 +11,6 @@ import Header from './components/Header';
 import HomeHeader from './components/HomeHeader';
 import Liability from './screens/Liability';
 import Bills from './screens/Bills';
-// import DataBase from "./screens/DataBase";
 
 import Start from './screens/Start';
 
@@ -23,9 +22,7 @@ const PageHeader = ({navigation, title}) => (
   </Header>
 );
 
-{
-  // <DataBase />;
-}
+
 
 const AuthStack = createStackNavigator();
 const AuthStackScreen = () => {
