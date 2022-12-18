@@ -16,11 +16,13 @@ const Bills = ({navigation}) => {
             height: 41,
             backgroundColor: '#D9D9D9',
             borderRadius: 10,
+            color: 'black',
           }}></TextInput>
 
         <Text style={Styles.text2}>Installment Amount</Text>
         <TextInput
           style={{
+            color: 'black',
             width: 300,
             height: 41,
             backgroundColor: '#D9D9D9',
