@@ -2,6 +2,7 @@ import * as React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 import {TextInput} from 'react-native-gesture-handler';
 import Button from '../components/Button';
+import Total from './Total';
 
 const Liability = ({navigation}) => {
   return (
@@ -18,6 +19,7 @@ const Liability = ({navigation}) => {
             height: 41,
             backgroundColor: '#D9D9D9',
             borderRadius: 10,
+            color: 'black',
           }}></TextInput>
 
         <Text style={Styles.text2}>Total Amount</Text>
@@ -27,6 +29,7 @@ const Liability = ({navigation}) => {
             height: 41,
             backgroundColor: '#D9D9D9',
             borderRadius: 10,
+            color: 'black',
           }}></TextInput>
         <Text style={Styles.text2}>Installment Amount</Text>
         <TextInput
@@ -35,6 +38,7 @@ const Liability = ({navigation}) => {
             height: 41,
             backgroundColor: '#D9D9D9',
             borderRadius: 10,
+            color: 'black',
           }}></TextInput>
       </View>
       <View
@@ -45,7 +49,7 @@ const Liability = ({navigation}) => {
           paddingHorizontal: 30,
           paddingVertical: 30,
         }}>
-        <Button onPress={() => navigation.navigate('Home')} title="Save" />
+        <Button onPress={() => navigation.navigate('Total')} title="Save" />
       </View>
     </View>
   );

@@ -12,9 +12,9 @@ import Liability from './Liability';
 const CategoryPg = ({navigation}) => {
   var radio_props = [
     {label: '💰Chits', value: 0},
-    {label: '💰Installment', value: 1},
-    {label: '💰loans ', value: 2},
-    {label: '🧾bills', value: 3},
+    {label: '💰Installments', value: 1},
+    {label: '💰Loans ', value: 2},
+    {label: '🧾Bills', value: 3},
   ];
   const [value, setValue] = useState(0);
   const [value3Index, setvalue3Index] = useState(0);

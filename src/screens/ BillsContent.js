@@ -6,7 +6,7 @@ const Bills = ({navigation}) => {
   return (
     <View style={Styles.container}>
       <View style={Styles.container1}>
-        <Text style={Styles.text1}> 🧾 Bills</Text>
+        <Text style={Styles.text1}>🧾 Bills</Text>
       </View>
       <View style={Styles.container2}>
         <Text style={Styles.text2}> Name</Text>

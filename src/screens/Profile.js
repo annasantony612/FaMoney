@@ -34,9 +34,57 @@ const Profile = ({navigation}) => {
         </Text>
       </View>
       <View
-        style={{flex: 2, alignItems: 'center', justifyContent: 'flex-start'}}>
-        <View>
-          <Text style={{color: 'black'}}>Overview ...</Text>
+        style={{
+          flex: 2,
+          paddingBottom: 20,
+          paddingHorizontal: 30,
+          paddingTop: 40,
+        }}>
+        <View
+          style={{
+            borderBottomWidth: 2,
+            borderBottomColor: '#D9D9D9',
+          }}>
+          <Text style={{color: 'black', fontSize: 25, fontWeight: '500'}}>
+            Overview ...
+          </Text>
+        </View>
+        <View
+          style={{
+            paddingTop: 30,
+            alignItems: 'flex-start',
+            justifyContent: 'flex-start',
+            flexDirection: 'row',
+          }}>
+          <View style={{flex: 1}}>
+            <Text style={{color: 'black', fontSize: 18, fontWeight: '500'}}>
+              Total Liabilities
+            </Text>
+          </View>
+          <View style={{fkex: 1}}>
+            <Text style={{color: 'black', fontSize: 18, fontWeight: '500'}}>
+              ₹ 500000
+            </Text>
+          </View>
+        </View>
+
+        <View
+          style={{
+            paddingTop: 30,
+            alignItems: 'flex-start',
+            justifyContent: 'flex-start',
+            flexDirection: 'row',
+          }}>
+          <View style={{flex: 1}}>
+            <Text style={{color: 'black', fontSize: 18, fontWeight: '500'}}>
+              Bills
+            </Text>
+          </View>
+          <View style={{fkex: 1}}>
+            <Text style={{color: 'black', fontSize: 18, fontWeight: '500'}}>
+              ₹ 7500
+            </Text>
+          </View>
         </View>
       </View>
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>

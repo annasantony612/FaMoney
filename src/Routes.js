@@ -11,6 +11,7 @@ import Header from './components/Header';
 import HomeHeader from './components/HomeHeader';
 import Liability from './screens/Liability';
 import Bills from './screens/ BillsContent';
+import Total from './screens/Total';
 
 import Start from './screens/Start';
 
@@ -61,6 +62,13 @@ const HomeStackScreen = () => {
       <HomeStack.Screen
         name="Bills"
         component={Bills}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <HomeStack.Screen
+        name="Total"
+        component={Total}
         options={{
           headerShown: false,
         }}
