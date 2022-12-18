@@ -1,75 +1,69 @@
-import * as React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
-import {TextInput} from 'react-native-gesture-handler';
-import Button from '../components/Button';
-const Bills = ({navigation}) => {
-  return (
-    <View style={Styles.container}>
-      <View style={Styles.container1}>
-        <Text style={Styles.text1}> 🧾 Bills</Text>
-      </View>
-      <View style={Styles.container2}>
-        <Text style={Styles.text2}> Name</Text>
-        <TextInput
-          style={{
-            width: 300,
-            height: 41,
-            backgroundColor: '#D9D9D9',
-            borderRadius: 10,
-          }}></TextInput>
+import {View, Text} from 'react-native';
+import React from 'react';
 
-        <Text style={Styles.text2}>Installment Amount</Text>
-        <TextInput
-          style={{
-            width: 300,
-            height: 41,
-            backgroundColor: '#D9D9D9',
-            borderRadius: 10,
-          }}></TextInput>
+const History = navigation => {
+  return (
+    <View style={{flex: 1}}>
+      <View style={{paddingTop: 30, paddingLeft: 20, paddingBottom: 20}}>
+        <Text style={{color: 'black', fontSize: 16, fontWeight: '600'}}>
+          Bills to be paid{' '}
+        </Text>
       </View>
+
       <View
         style={{
-          flex: 1,
-          alignItems: 'center',
-          justifyContent: 'flex-end',
-          paddingHorizontal: 30,
-          paddingVertical: 30,
+          backgroundColor: '#D9D9D9',
+          padding: 20,
+          borderRadius: 10,
+          marginHorizontal: 20,
         }}>
-        <Button onPress={() => navigation.navigate('Home')} title="Save" />
+        <View style={{flexDirection: 'row', paddingBottom: 20}}>
+          <View
+            style={{
+              flex: 1,
+              alignItems: 'flex-start',
+              justifyContent: 'flex-start',
+            }}>
+            <Text style={{color: 'black'}}>Electricity Bill</Text>
+          </View>
+
+          <View
+            style={{
+              flex: 1,
+              alignItems: 'flex-end',
+              justifyContent: 'flex-end',
+            }}>
+            <Text style={{color: 'black'}}>Rs 3000</Text>
+          </View>
+        </View>
+
+        <View style={{flexDirection: 'row'}}>
+          <View
+            style={{
+              flex: 1,
+              alignItems: 'flex-start',
+              justifyContent: 'flex-start',
+            }}>
+            <Text style={{color: 'black'}}>SBI</Text>
+          </View>
+
+          <View
+            style={{
+              flex: 1,
+              alignItems: 'flex-end',
+              justifyContent: 'flex-end',
+            }}>
+            <Text
+              style={{
+                color: 'black',
+              }}>
+              Rs 5000
+            </Text>
+          </View>
+        </View>
       </View>
     </View>
   );
 };
 
-export default Bills;
-Styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  container1: {
-    flex: 1,
-    padding: 10,
-  },
-  container2: {
-    flex: 4,
-    paddingLeft: 30,
-  },
-  text1: {
-    color: 'black',
-    fontSize: 28,
-    fontWeight: '400',
-    textAlign: 'center',
-    marginTop: 30,
-  },
-  text2: {
-    padding: 10,
-    fontSize: 15,
-    color: 'black',
-  },
-  textbox: {
-    width: 300,
-    height: 41,
-    borderRadius: 10,
-    backgroundColor: '#D9D9D9',
-  },
-});
+export default History;

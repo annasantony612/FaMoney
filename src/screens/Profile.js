@@ -21,7 +21,7 @@ const Profile = ({navigation}) => {
             paddingBottom: 10,
             paddingLeft: 20,
           }}>
-          Shaji A C
+          Anna S
         </Text>
         <Text
           style={{
@@ -30,10 +30,15 @@ const Profile = ({navigation}) => {
             fontWeight: '700',
             paddingLeft: 20,
           }}>
-          shaji@gmail.com
+          annas@gmail.com
         </Text>
       </View>
-      <View style={{flex: 2}}></View>
+      <View
+        style={{flex: 2, alignItems: 'center', justifyContent: 'flex-start'}}>
+        <View>
+          <Text style={{color: 'black'}}>Overview ...</Text>
+        </View>
+      </View>
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
         <Button onPress={() => signOut()} title="Sign out" />
       </View>

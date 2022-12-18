@@ -2,7 +2,7 @@ import {View, Text, StyleSheet} from 'react-native';
 import React, {useState} from 'react';
 import Profile from './screens/Profile';
 import Home from './screens/Home';
-import History from './screens/History';
+import History from './screens/Bills';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
@@ -10,7 +10,7 @@ import CategoryPg from './screens/CategoryPg';
 import Header from './components/Header';
 import HomeHeader from './components/HomeHeader';
 import Liability from './screens/Liability';
-import Bills from './screens/Bills';
+import Bills from './screens/ BillsContent';
 
 import Start from './screens/Start';
 
@@ -21,8 +21,6 @@ const PageHeader = ({navigation, title}) => (
     </View>
   </Header>
 );
-
-
 
 const AuthStack = createStackNavigator();
 const AuthStackScreen = () => {
@@ -81,9 +79,9 @@ const TabsScreen = () => (
       options={{header: ({navigation}) => <PageHeader title="FaMoney" />}}
     />
     <Tabs.Screen
-      name="History"
+      name="Bills"
       component={History}
-      options={{header: ({navigation}) => <PageHeader title="History" />}}
+      options={{header: ({navigation}) => <PageHeader title="Bills" />}}
     />
     <Tabs.Screen
       name="Profile"
