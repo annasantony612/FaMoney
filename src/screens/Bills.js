@@ -1,7 +1,8 @@
 import * as React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 import {TextInput} from 'react-native-gesture-handler';
-const Liability = () => {
+import Button from '../components/Button';
+const Bills = ({navigation}) => {
   return (
     <View style={Styles.container}>
       <View style={Styles.container1}>
@@ -26,11 +27,21 @@ const Liability = () => {
             borderRadius: 10,
           }}></TextInput>
       </View>
+      <View
+        style={{
+          flex: 1,
+          alignItems: 'center',
+          justifyContent: 'flex-end',
+          paddingHorizontal: 30,
+          paddingVertical: 30,
+        }}>
+        <Button onPress={() => navigation.navigate('Home')} title="Save" />
+      </View>
     </View>
   );
 };
 
-export default Liability;
+export default Bills;
 Styles = StyleSheet.create({
   container: {
     flex: 1,
